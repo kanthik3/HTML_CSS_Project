@@ -1,24 +1,93 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>CSS Competence Trial</title>
+<style>
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  .header {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('sweet.jpg'); /* Replace 'your-image-url.jpg' with the actual image URL */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr; /* Adjust column widths as needed */
+    grid-template-rows: auto auto auto;
+    gap: 20px;
+    min-height: 100vh;
+  }
+
+  .header {
+    grid-column: 1 / 4; /* Header spans across all columns */
+    background-color: #f2a71b; /* Color for header background */
+    padding: 20px;
+    text-align: center;
+  }
+
+  .left {
+    background-color: #f7d7a8; /* Color for left column background */
+    padding: 20px;
+  }
+
+  .middle {
+    background-color: #ffffff; /* Color for middle column background */
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+  }
+
+  .right {
+    background-color: #f7d7a8; /* Color for right column background */
+    padding: 20px;
+  }
+
+  .footer {
+    grid-column: 1 / 4; /* Footer spans across all columns */
+    background-color: #e0e0e0; /* Color for footer background */
+    padding: 10px;
+    text-align: center;
+  }
+</style>
 </head>
 <body>
-    <header>
-        <h1>CSS Mastery Showcase</h1>
-    </header>
-    <main>
-        <section class="content">
-            <h2>Welcome to Our Showcase</h2>
-            <p>Explore the magic of CSS animations and advanced techniques.</p>
-            <button class="btn">Hover Me</button>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2023 CSS Mastery Showcase</p>
-    </footer>
+<div class="grid-container">
+  <div class="header">
+    <h1>Indian Sweet Shop</h1>
+    <p>Delicious Sweets from India</p>
+  </div>
+  
+  <div class="left">
+    <h2>About Us</h2>
+    <p>Welcome to our Indian Sweet Shop! We offer a wide range of traditional Indian sweets made with the finest ingredients.</p>
+  </div>
+  
+  <div class="middle">
+    <h2>Our Sweets</h2>
+    <p>Explore our delightful collection of Indian sweets, including Gulab Jamun, Rasgulla, Barfi, and more.</p>
+    <p>Place an order and experience the authentic taste of India.</p>
+  </div>
+  
+  <div class="right">
+    <h2>Contact Us</h2>
+    <p>If you have any questions or special requests, feel free to contact us:</p>
+    <p>Email: info@indiansweetshop.com</p>
+    <p>Phone: +1234567890</p>
+  </div>
+  
+  <div class="footer">
+    <p>&copy; 2023 Indian Sweet Shop. All rights reserved.</p>
+  </div>
+</div>
 </body>
 </html>
